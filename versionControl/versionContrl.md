@@ -4,7 +4,7 @@ marp: true
 
 # <!-- fit -->基于 git/gitLab 的版本管理
 
-<!-- footer: by 浩克 -->
+<!-- footer: by 贾克深 -->
 
 ---
 

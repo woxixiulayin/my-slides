@@ -4,7 +4,7 @@ marp: true
 
 # 插件机制设计-part(1)
 
-By 浩克
+By 贾克深
 
 ---
 

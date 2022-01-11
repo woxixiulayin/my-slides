@@ -114,6 +114,8 @@ async function uploadFile() {
 
 ## Talk is cheap, Show me your code!
 
+[一个基于事件的插件系统演示](https://github.com/woxixiulayin/my-slides/tree/master/plugin-design/example/simplePlugin)
+
 ---
 
 ## 总结

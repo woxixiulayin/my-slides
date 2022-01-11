@@ -12,7 +12,7 @@ marp: true
 
 ## 上一期实现的插件机制代码，有哪些问题？
 
-### [simplePlugin 代码库](https://github.com/woxixiulayin/my-slides/blob/master/plugin-design/example/simplePlugin/simplePluginUpload.js)
+### [simplePlugin 代码库](https://github.com/woxixiulayin/my-slides/tree/master/plugin-design/example/simplePlugin)
 
 ---
 
@@ -48,17 +48,17 @@ marp: true
 - 插件的实现主要靠勾子函数与主程序沟通
 - 插件库主要提供各种类型的勾子和勾子管理器让开发者设计自己的插件机制
 
-### [Tapable](https://github.com/webpack/tapable)
+### [webpack的插件库Tapable](https://github.com/webpack/tapable)
 
-### [Modern.js](https://modernjs.dev/docs/apis/runtime/plugin/abstruct)
+### [字节开源的Modern.js中的插件系统](https://modernjs.dev/docs/apis/runtime/plugin/abstruct)
 
 ---
 
 # 开发插件库的核心要点
 
-- hook 模型（插件的执行顺序以及之间的影响）
+- hook 模型（插件之间的沟通与执行顺序）
 - hook 模型管理器（插件的管理）
-- 上下文共享机制（核心与插件的通信）
+- 上下文共享机制（核心与插件的交互）
 
 ---
 
@@ -97,10 +97,10 @@ marp: true
 
 # 总结
 
-- 软件设计要解决的问题：分离**控制**与**逻辑**
+- 软件设计要解决的问题：分离**业务逻辑**与**控制逻辑**
 
-- 插件机制是**控制**的一种实现，实现了**可复用的控制机制**
+- 插件机制是**控制逻辑**的一种典型实现，实现了**可复用的控制逻辑**
 
-- 从细节的开发到整体的设计需要尽可能的分离控制与逻辑
+- 从细节的开发到整体的设计需要尽可能的分离**业务逻辑**与**控制逻辑**
 
 ---
